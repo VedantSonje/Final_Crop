@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- link to css file -->
+  <link rel="stylesheet" href="static/Dashboard_token_entry.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Chilanka|Gayathri|Merriweather|Oswald|Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <!-- fontawesome link -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title></title>
+</head>
+
+<body>
+  <div class="container">
+
+  </div>
+
+</div>
+
+  <!-- NAVIGATION BAR WITH VIDEO CODE -->
+    <!-- Navigation -->
+
+    <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+
+<section class="pricing py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Free Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center"><b>CROP PREDICTION SYSTEM</b></h5><hr>
+
+              <form action="{{ url_for('predict')}}"method="post">
+                <input type="text" name="temperature" placeholder="temperature" required="required" /><br><hr>
+                  <input type="text" name="humidity" placeholder="humidity" required="required" /><br><hr>
+              <input type="text" name="ph" placeholder="ph" required="required" /><br><hr>
+                  <input type="text" name="rainfall" placeholder="rainfall" required="required" /><br><hr>
+
+                  <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+              </form>
+            <label for="getTokenNo1"></label>
+           <br><br>
+           {{ prediction_text }}
+          </div>
+        </div>
+      </div>
+      <!-- Plus Tier -->
+
+
+    <!-- Example single danger button -->
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+ <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+
+
+
+</body>
+
+</html>
